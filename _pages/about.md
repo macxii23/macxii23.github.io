@@ -16,7 +16,7 @@ Standing at the inflection point where AI is reshaping transportation research, 
 Specifically, my work focuses on the following key areas:
 
 - Generative AI-based intelligent civil infrastructure design and optimization
-  - [Objective-Directed Deep Graph Generative Model for Automatic and Intelligent Highway Interchange Design]([doi](https://doi.org/10.1016/j.autcon.2025.105982)) (AIC 2025)
+  - [Objective-Directed Deep Graph Generative Model for Automatic and Intelligent Highway Interchange Design](https://doi.org/10.1016/j.autcon.2025.105982) (AIC 2025)
   - Image-based Interchange Structure Design and Optimization using Conditional Diffusion Models, working in progress
 
 - Quadruped robot learning for highway environments
@@ -24,8 +24,8 @@ Specifically, my work focuses on the following key areas:
   - Reinforcement Learning-based Coverage Path Planning for Large-scale Unknown 3D Highway Environments, working in progress
 
 - Graph-based transportation systems modeling
-  - [Graph Neural Network-Based Generalized Graph Partitioning for Accelerated Large-Scale Microscopic Traffic Parallel Simulation]([doi](https://doi.org/10.1016/j.tre.2025.104586)) (TRE 2026)
-  - [A Geometric Deep Learning Approach to Traffic Flow Shockwave Prediction on Freeways Using Vehicle Trajectory Data and HD Map]([doi](http://doi.org/10.1109/TITS.2025.3563767)) (IEEE T-ITS 2025)
+  - [Graph Neural Network-Based Generalized Graph Partitioning for Accelerated Large-Scale Microscopic Traffic Parallel Simulation](https://doi.org/10.1016/j.tre.2025.104586) (TRE 2026)
+  - [A Geometric Deep Learning Approach to Traffic Flow Shockwave Prediction on Freeways Using Vehicle Trajectory Data and HD Map](http://doi.org/10.1109/TITS.2025.3563767) (IEEE T-ITS 2025)
 
 # Recent News
 
