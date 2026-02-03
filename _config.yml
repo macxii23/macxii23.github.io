@@ -38,7 +38,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=Tq3kb_sAAAAJ"  # Update with your actual Google Scholar ID
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # URL
+  orcid            : "https://orcid.org/0009-0001-6228-7516"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
@@ -51,13 +51,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "macxii23"
+  github           : # Username
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -66,7 +65,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "chenxiang-ma-ba2605377"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
