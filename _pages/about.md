@@ -9,7 +9,7 @@ redirect_from:
 
 I am currently a final-year Master's student at [Southeast University](https://www.seu.edu.cn/), Nanjing, China, working under the supervision of [Prof. Chengcheng Xu]([‪Chengcheng Xu‬ - ‪Google Scholar‬](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en)). I earned my Bachelor degree in Traffic Engineering (Mao Yisheng Class) from Southeast University in 2023.
 
-My research concentrates on **Generative and Embodied Artificial Intelligence for Intelligent Transportation Systems**. Standing at the inflection point where AI is reshaping transportation research, I aim to explore how data-driven Machine Intelligence can transcend the boundaries of traditional modeling, optimization, and decision-making paradigms. My ultimate goal is to facilitate the construction of a smarter, more trustworthy next-generation ITS.
+My research concentrates on **Generative and Embodied Artificial Intelligence for Intelligent Transportation Systems**. Standing at the inflection point where AI is reshaping transportation research, I aim to explore how emerging technologies can transcend the boundaries of traditional modeling, optimization, and decision-making paradigms. My ultimate goal is to construct more intelligent and trustworthy autonomous transportation systems.
 
 Specifically, my work focuses on the following key areas:
 
@@ -17,7 +17,7 @@ Specifically, my work focuses on the following key areas:
   - [Objective-Directed Deep Graph Generative Model for Automatic and Intelligent Highway Interchange Design](https://doi.org/10.1016/j.autcon.2025.105982) (AIC 2025)
   - Image-based Interchange Structure Design and Optimization using Conditional Diffusion Models, working in progress
 
-- **Quadruped robot learning for highway environments**
+- **Embodied AI-driven quadruped robot learning in highway environments**
   - Full-Scale Autonomous Highway Inspection with Quadruped Robot: Multi-Level Locomotion Learning in Complex Environments (ICRA 2026)
   - Reinforcement Learning-based Coverage Path Planning for Large-scale Unknown 3D Highway Environments, working in progress
 
