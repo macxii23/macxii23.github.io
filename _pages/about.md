@@ -1,12 +1,11 @@
 ---
 permalink: /
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-# About Me
 
 I am a Master's student in Traffic and Transportation Engineering at [Southeast University](https://www.seu.edu.cn/), Nanjing, China, working under the supervision of [Prof. Chengcheng Xu](https://scholar.google.com/citations?user=PS_CX0AAAAAJ). My research focuses on **Generative and Embodied Artificial Intelligence for intelligent transportation systems**, with particular interests in:
 
@@ -16,7 +15,7 @@ I am a Master's student in Traffic and Transportation Engineering at [Southeast 
 
 I am expected to graduate in June 2026. During my studies, I have maintained a GPA of 3.92/4.0, ranking 2/72 in my major and 4/276 overall in the School.
 
-# Research Highlights
+## Research Highlights
 
 My research has been published in top-tier venues including **ICRA 2026**, **Transportation Research Part E** (IF 8.8, JCR Q1), **Automation in Construction** (IF 11.5, JCR Q1), and **IEEE Transactions on Intelligent Transportation Systems** (IF 8.4, JCR Q1). I have also presented my work at the **Transportation Research Board (TRB) Annual Meetings**, one of the top transportation conferences.
 
