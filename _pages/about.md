@@ -7,63 +7,41 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master's student in Traffic and Transportation Engineering at [Southeast University](https://www.seu.edu.cn/), Nanjing, China, working under the supervision of [Prof. Chengcheng Xu](https://scholar.google.com/citations?user=PS_CX0AAAAAJ). My research focuses on **Generative and Embodied Artificial Intelligence for intelligent transportation systems**, with particular interests in:
+I am currently a final-year Master's student at [Southeast University](https://www.seu.edu.cn/), Nanjing, China, working under the supervision of [Prof. Chengcheng Xu]([‪Chengcheng Xu‬ - ‪Google Scholar‬](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en)). I earned my Bachelor degree in Traffic Engineering (Mao Yisheng Class) from Southeast University in 2023.
 
-- Generative AI-based intelligent civil infrastructure management
-- Learning-based quadruped robotic control for highway maintenance
-- Graph-based transportation modeling
+My research concentrates on **Generative and Embodied Artificial Intelligence for Intelligent Transportation Systems.
 
-I am expected to graduate in June 2026. During my studies, I have maintained a GPA of 3.92/4.0, ranking 2/72 in my major and 4/276 overall in the School.
+Standing at the inflection point where AI is reshaping transportation research, I aim to explore how data-driven **Machine Intelligence** can transcend the boundaries of traditional modeling, optimization, and decision-making paradigms. My ultimate goal is to facilitate the construction of a smarter, more trustworthy next-generation ITS.
 
-## Research Highlights
+Specifically, my work focuses on the following key areas:
 
-My research has been published in top-tier venues including **ICRA 2026**, **Transportation Research Part E** (IF 8.8, JCR Q1), **Automation in Construction** (IF 11.5, JCR Q1), and **IEEE Transactions on Intelligent Transportation Systems** (IF 8.4, JCR Q1). I have also presented my work at the **Transportation Research Board (TRB) Annual Meetings**, one of the top transportation conferences.
+- Generative AI-based intelligent civil infrastructure design and optimization
+  - [Objective-Directed Deep Graph Generative Model for Automatic and Intelligent Highway Interchange Design]([doi](https://doi.org/10.1016/j.autcon.2025.105982)) (AIC 2025)
+  - Image-based Interchange Structure Design and Optimization using Conditional Diffusion Models, working in progress
+  
+- Quadruped robot learning for highway environments
+  - Full-Scale Autonomous Highway Inspection with Quadruped Robot: Multi-Level Locomotion Learning in Complex Environments (ICRA 2026)
+  - Reinforcement Learning-based Coverage Path Planning for Large-scale Unknown 3D Highway Environments, working in progress
 
-**Key Achievements:**
-- 🏆 **ICRA 2026** accepted paper on autonomous highway inspection with quadruped robots
-- 🏆 **Best Paper Award** at the 16th National Youth Conference on Transportation
-- 🏆 **China National Scholarship** (twice, top 3%)
-- 🏆 **Outstanding Graduate Student Cadre** (only 2 recipients)
+- Graph-based transportation systems modeling
+  - [Graph Neural Network-Based Generalized Graph Partitioning for Accelerated Large-Scale Microscopic Traffic Parallel Simulation]([doi](https://doi.org/10.1016/j.tre.2025.104586)) (TRE 2026)
+  - [A Geometric Deep Learning Approach to Traffic Flow Shockwave Prediction on Freeways Using Vehicle Trajectory Data and HD Map]([doi](http://doi.org/10.1109/TITS.2025.3563767)) (IEEE T-ITS 2025)
 
-## Current Research Projects
 
-### 1. Autonomous Inspection of Complex Highway Environments Using Quadruped Robot
-*Group Leader | Sep 2024 - Present*
 
-I proposed a quadrupedal multi-level locomotion framework based on reinforcement learning for autonomous highway inspection, combining locomotion control and coverage path planning. The system achieved 100% coverage of 14,400 m² highway environment in 0.4 hours and is currently being deployed in real-world scenarios.
+# Recent News
+======
+<div style="max-height: 500px; overflow-y: auto; padding: 10px; border: 1px solid #eee; border-radius: 5px;">
+<ul>
+  <li>🎉 [Jan. 2026] Excited to share that our work on quadruped robot for highway inspection has been accepted to IEEE ICRA 2026! See you in Vienna!  </li>
+  <li>🍻 [Jan. 2026] Had a great time engaging with the transportation community at the 105th TRB Annual Meeting.  </li>
+</ul>
+</div>
 
-### 2. Generalized Graph Partitioning for Accelerated Large-Scale Traffic Parallel Simulation
-*Group Leader | Feb 2024 - Aug 2024*
 
-Developed a traffic parallel simulation framework based on hierarchical graph neural networks, achieving 13.23 times acceleration on a provincial highway network with more than 98% accuracy. The framework has been applied in the Henan highway simulation platform.
 
-### 3. Graph-Based Generative Model for Automatic Intelligent Highway Interchange Design
-*Group Leader | Sep 2023 - Aug 2024*
 
-Developed an objective-directed graph generative approach that automates highway interchange design, cutting design time from days to sub-second while improving throughput by 5.67% and reducing cost by 27.63%.
 
-## Education
+# Get in Touch
 
-**M.S., Traffic and Transportation Engineering**  
-Southeast University, Nanjing, China  
-*Sep 2023 - Jun 2026 (expected)*
-- GPA: 3.92/4.0; Rank: 2/72 (Major), 4/276 (Overall in the School)
-- Advisor: Prof. Chengcheng Xu
-- Main Courses: Traffic Engineering Theory (100), Data analysis and modeling (96)
-
-**B.S., Traffic Engineering (Mao Yisheng Class)**  
-Southeast University, Nanjing, China  
-*Sep 2019 - Jun 2023*
-- GPA: 3.93/4.0; Rank: 2/96
-- Main Courses: Linear Algebra (99), College Physics (99), Advanced Mathematics (98), Probability Theory and Mathematical Statistics (98), Programming and Algorithmic Language (97)
-
-## Contact
-
-- **Email**: [machenxiang@seu.edu.cn](mailto:machenxiang@seu.edu.cn)
-- **Tel**: +86 18503726332
-- **Google Scholar**: [View my profile](https://scholar.google.com/citations?user=PS_CX0AAAAAJ)
-- **GitHub**: [macxii23](https://github.com/macxii23)
-
----
-
-*For more details about my publications, talks, and research projects, please visit the [Publications](/publications/), [Talks](/talks/), and [CV](/cv/) pages.*
+If you are interested in my research, have questions about my work, or would like to discuss potential collaborations, I would be very happy to hear from you! Please feel free to reach out via email or any of the contact methods above.
