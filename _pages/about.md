@@ -27,6 +27,8 @@ Specifically, my work focuses on the following key areas:
   - [Graph Neural Network-Based Generalized Graph Partitioning for Accelerated Large-Scale Microscopic Traffic Parallel Simulation](https://doi.org/10.1016/j.tre.2025.104586) (TRE 2026)
   - [A Geometric Deep Learning Approach to Traffic Flow Shockwave Prediction on Freeways Using Vehicle Trajectory Data and HD Map](http://doi.org/10.1109/TITS.2025.3563767) (IEEE T-ITS 2025)
 
+<div style="margin-top: 3em;"></div>
+
 # Recent News
 
 <div style="max-height: 500px; overflow-y: auto; padding: 10px; border: 1px solid #eee; border-radius: 5px;">
@@ -35,6 +37,8 @@ Specifically, my work focuses on the following key areas:
   <li>🍻 [Jan. 2026] Had a great time engaging with the transportation community at the 105th TRB Annual Meeting.  </li>
 </ul>
 </div>
+
+<div style="margin-top: 3em;"></div>
 
 # Get in Touch
 
