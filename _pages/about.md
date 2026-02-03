@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Chenxiang Ma"
+title: "Homepage"
 author_profile: true
 redirect_from: 
   - /about/
