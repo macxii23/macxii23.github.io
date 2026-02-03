@@ -1,56 +1,71 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Chenxiang Ma"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+## About Me
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am a Master's student in Traffic and Transportation Engineering at [Southeast University](https://www.seu.edu.cn/), Nanjing, China, working under the supervision of [Prof. Chengcheng Xu](https://scholar.google.com/citations?user=PS_CX0AAAAAJ). My research focuses on **Generative and Embodied Artificial Intelligence for intelligent transportation systems**, with particular interests in:
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+- Generative AI-based intelligent civil infrastructure management
+- Learning-based quadruped robotic control for highway maintenance
+- Graph-based transportation modeling
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+I am expected to graduate in June 2026. During my studies, I have maintained a GPA of 3.92/4.0, ranking 2/72 in my major and 4/276 overall in the School.
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+## Research Highlights
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+My research has been published in top-tier venues including **ICRA 2026**, **Transportation Research Part E** (IF 8.8, JCR Q1), **Automation in Construction** (IF 11.5, JCR Q1), and **IEEE Transactions on Intelligent Transportation Systems** (IF 8.4, JCR Q1). I have also presented my work at the **Transportation Research Board (TRB) Annual Meetings**, one of the top transportation conferences.
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+**Key Achievements:**
+- 🏆 **ICRA 2026** accepted paper on autonomous highway inspection with quadruped robots
+- 🏆 **Best Paper Award** at the 16th National Youth Conference on Transportation
+- 🏆 **China National Scholarship** (twice, top 3%)
+- 🏆 **Outstanding Graduate Student Cadre** (only 2 recipients)
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+## Current Research Projects
 
-**Markdown generator**
+### 1. Autonomous Inspection of Complex Highway Environments Using Quadruped Robot
+*Group Leader | Sep 2024 - Present*
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+I proposed a quadrupedal multi-level locomotion framework based on reinforcement learning for autonomous highway inspection, combining locomotion control and coverage path planning. The system achieved 100% coverage of 14,400 m² highway environment in 0.4 hours and is currently being deployed in real-world scenarios.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+### 2. Generalized Graph Partitioning for Accelerated Large-Scale Traffic Parallel Simulation
+*Group Leader | Feb 2024 - Aug 2024*
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+Developed a traffic parallel simulation framework based on hierarchical graph neural networks, achieving 13.23 times acceleration on a provincial highway network with more than 98% accuracy. The framework has been applied in the Henan highway simulation platform.
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+### 3. Graph-Based Generative Model for Automatic Intelligent Highway Interchange Design
+*Group Leader | Sep 2023 - Aug 2024*
+
+Developed an objective-directed graph generative approach that automates highway interchange design, cutting design time from days to sub-second while improving throughput by 5.67% and reducing cost by 27.63%.
+
+## Education
+
+**M.S., Traffic and Transportation Engineering**  
+Southeast University, Nanjing, China  
+*Sep 2023 - Jun 2026 (expected)*
+- GPA: 3.92/4.0; Rank: 2/72 (Major), 4/276 (Overall in the School)
+- Advisor: Prof. Chengcheng Xu
+- Main Courses: Traffic Engineering Theory (100), Data analysis and modeling (96)
+
+**B.S., Traffic Engineering (Mao Yisheng Class)**  
+Southeast University, Nanjing, China  
+*Sep 2019 - Jun 2023*
+- GPA: 3.93/4.0; Rank: 2/96
+- Main Courses: Linear Algebra (99), College Physics (99), Advanced Mathematics (98), Probability Theory and Mathematical Statistics (98), Programming and Algorithmic Language (97)
+
+## Contact
+
+- **Email**: [machenxiang@seu.edu.cn](mailto:machenxiang@seu.edu.cn)
+- **Tel**: +86 18503726332
+- **Google Scholar**: [View my profile](https://scholar.google.com/citations?user=PS_CX0AAAAAJ)
+- **GitHub**: [macxii23](https://github.com/macxii23)
+
+---
+
+*For more details about my publications, talks, and research projects, please visit the [Publications](/publications/), [Talks](/talks/), and [CV](/cv/) pages.*
