@@ -30,15 +30,12 @@ Specifically, my work focuses on the following key areas:
 
 
 # Recent News
-======
 <div style="max-height: 500px; overflow-y: auto; padding: 10px; border: 1px solid #eee; border-radius: 5px;">
 <ul>
   <li>🎉 [Jan. 2026] Excited to share that our work on quadruped robot for highway inspection has been accepted to IEEE ICRA 2026! See you in Vienna!  </li>
   <li>🍻 [Jan. 2026] Had a great time engaging with the transportation community at the 105th TRB Annual Meeting.  </li>
 </ul>
 </div>
-
-
 
 
 
