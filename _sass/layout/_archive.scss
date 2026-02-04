@@ -139,12 +139,18 @@
   }
 }
 
+/* --- 右侧文字内容容器 --- */
 .publication-card__content {
   flex: 1;
   display: flex;
   flex-direction: column;
   
-
+  /* [核心修改 1] 增加段落之间的垂直间距 */
+  /* 之前可能是 0.5em，现在加大到 0.8em 或 1em，让标题、作者、期刊之间拉开距离 */
+  gap: 0.8em; 
+  
+  /* 确保文字垂直居中（如果你用了之前的对齐方案） */
+  justify-content: center; 
 }
 
 
@@ -180,11 +186,14 @@
   }
 }
 
+/* --- 作者列表样式 --- */
 .publication-card__authors {
   margin: 0;
   font-size: 0.95em;
-  color: var(--global-text-color);
-  line-height: 1.4;
+  color: #444; /* 稍微深一点的灰色 */
+  
+  /* [核心修改 3] 增加作者行的呼吸感 */
+  line-height: 1.6; 
 }
 
 .publication-card__venue {
