@@ -1,6 +1,6 @@
 ---
 header:
-  teaser: /images/pub/Shockwave.jpg  # 或视频路径
+  teaser: images/pub/Shockwave.jpg  # 或视频路径
 title: "Graph Neural Network-Based Generalized Graph Partitioning for Accelerated Large-Scale Microscopic Traffic Parallel Simulation"
 collection: publications
 category: journals
