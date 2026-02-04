@@ -4,7 +4,7 @@ collection: talks
 permalink: /talks/2026-01-04-autonomous-inspection-trb
 
 # 1. 对应代码中的 type @ venue
-type: "Conference Presentation"
+type: "Conference Poster Presentation"
 venue: "105th Transportation Research Board Annual Meeting (TRB)"
 
 # 2. 对应代码中的 date, location
