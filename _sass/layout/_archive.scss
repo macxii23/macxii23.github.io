@@ -170,33 +170,36 @@
   margin-top: 0.5em;
 }
 
-/* 找到 .btn--publication 并修改如下 */
+/* 请完全替换之前的 .btn--publication 代码 */
 .btn--publication {
   display: inline-block;
-  padding: 0.4em 0.8em;
-  font-size: 0.75em; /* 稍微调小一点字体更精致 */
-  font-weight: 600;  /* 加粗字体 */
-  text-decoration: none !important; /* 强制去掉下划线 */
+  vertical-align: middle;
   
-  /* --- 核心修改部分 --- */
-  /* 1. 给一个默认的深色边框，确保肉眼可见 */
-  border: 1px solid #333; 
-  /* 2. 强制文字颜色为深色 */
-  color: #333;            
-  /* 3. 背景色可以是透明或浅灰，不要完全依赖变量 */
-  background-color: transparent; 
-  /* ------------------ */
-
-  border-radius: 3px;
+  /* 核心样式：白底黑框黑字 */
+  background-color: #fff;       /* 强制白色背景 */
+  border: 1px solid #000;       /* 纯黑边框 */
+  color: #000 !important;       /* 强制纯黑文字 */
+  
+  /* 字体与排版 */
+  font-size: 12px;              /* 字号稍小，显精致 */
+  font-weight: 600;             /* 字体加粗 */
+  text-transform: uppercase;    /* 强制英文大写 (如 Code -> CODE) */
+  text-decoration: none !important;
+  line-height: 1.2;
+  
+  /* 间距与形状 */
+  padding: 4px 10px;            /* 上下窄，左右宽 */
+  border-radius: 4px;           /* 圆角 */
+  margin-right: 8px;            /* 按钮之间的间距 */
+  margin-top: 5px;              /* 稍微与标题拉开距离 */
+  
   transition: all 0.2s ease;
-  margin-right: 5px; /* 按钮之间增加间距 */
 
-  /* 悬停效果 (保持你原有的逻辑，或者是反转颜色) */
+  /* 悬停效果：黑底白字 */
   &:hover {
-    background-color: #333; /* 鼠标移上去变黑 */
-    color: #fff !important; /* 文字变白 */
-    border-color: #333;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 加一点阴影增加立体感 */
+    background-color: #000;     /* 背景变黑 */
+    color: #fff !important;     /* 文字变白 */
+    border-color: #000;
   }
 }
 
