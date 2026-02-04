@@ -73,6 +73,7 @@
 }
 
 /* Publication Card Layout */
+/* 找到 .publication-card 并增加对齐方式，防止左边图片被右边文字拉长 */
 .publication-card {
   display: flex;
   gap: 1.5em;
@@ -82,6 +83,7 @@
   border-radius: 4px;
   background-color: var(--global-bg-color);
   transition: box-shadow 0.3s ease;
+  align-items: flex-start; /* [核心修改] 让图片顶部对齐，高度自然撑开 */
 
   &:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -93,23 +95,32 @@
   }
 }
 
+/* 修改图片容器样式 */
 .publication-card__image {
   flex-shrink: 0;
-  width: 200px;
-  height: 120px;
-  overflow: hidden;
+  width: 200px;        /* [保持固定宽度] 保证左侧对齐整齐 */
+  height: auto;        /* [修改] 高度设为自动，随图片变化 */
   border-radius: 4px;
-  background-color: #f5f5f5;
+  background-color: transparent; /* 去掉灰色背景 */
+  
+  /* 去掉了 overflow: hidden，让图片完整显示 */
 
   img, video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;    /* 消除图片底部的微小空隙 */
+    width: 100%;       /* 宽度填满 200px */
+    height: auto;      /* [修改] 高度自动，保持原图比例 */
+    object-fit: contain; /* [修改] 确保图片完整显示，不裁剪 */
+    border-radius: 4px;
   }
 
   @include breakpoint(max-width $small) {
     width: 100%;
-    height: 180px;
+    height: auto;
+    
+    img {
+      max-height: 250px; /* 手机端限制最大高度，防止图片太长 */
+      object-fit: cover; /* 手机上可以稍微裁剪一点以保证美观 */
+    }
   }
 }
 
