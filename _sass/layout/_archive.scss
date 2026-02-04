@@ -66,6 +66,12 @@
   }
 }
 
+/* Publications citation font size - larger than default excerpt */
+.list__item .archive__item-excerpt {
+  font-size: 1em; // Same as body text (16px), larger than default 0.75em (12px)
+  line-height: 1.6;
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
