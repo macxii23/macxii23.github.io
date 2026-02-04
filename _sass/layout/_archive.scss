@@ -73,56 +73,72 @@
 }
 
 /* Publication Card Layout */
-/* 找到 .publication-card 并增加对齐方式，防止左边图片被右边文字拉长 */
+/* --- 1. 父容器布局调整 --- */
 .publication-card {
   display: flex;
-  gap: 1.5em;
+  /* gap: 1.5em;  <-- [删除] 我们改用 margin 来更精确控制间距 */
   margin-bottom: 2em;
-  padding: 1em;
+  padding: 1.2em; /* 稍微增加一点内边距让整体更舒展 */
   border: 1px solid var(--global-border-color);
-  border-radius: 4px;
+  border-radius: 6px; /* 圆角稍微大一点点 */
   background-color: var(--global-bg-color);
-  transition: box-shadow 0.3s ease;
-  align-items: flex-start; /* [核心修改] 让图片顶部对齐，高度自然撑开 */
+  transition: all 0.3s ease;
+  align-items: flex-start; /* [保持顶部对齐] 这是最自然的对齐方式 */
 
   &:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 悬停浮起效果更明显一点 */
+    transform: translateY(-2px); /* 微微上浮 */
   }
 
-  @include breakpoint(max-width $small) {
+  @include breakpoint(max-width $medium) { /* 在中等屏幕（平板）就开始调整 */
+     padding: 1em;
+  }
+
+  @include breakpoint(max-width $small) { /* 手机端变为垂直排列 */
     flex-direction: column;
-    gap: 1em;
   }
 }
 
-/* 修改图片容器样式 */
+/* --- 2. 图片容器核心修改 --- */
 .publication-card__image {
   flex-shrink: 0;
-  width: 200px;        /* [保持固定宽度] 保证左侧对齐整齐 */
-  height: auto;        /* [修改] 高度设为自动，随图片变化 */
+  /* [核心修改] 宽度固定为 350px，让图片明显变大 */
+  width: 350px;        
+  height: auto;        /* 高度自适应，随宽度按比例变化 */
+  margin-right: 1.5em; /* [新增] 图片右侧与文字的间距 */
   border-radius: 4px;
-  background-color: transparent; /* 去掉灰色背景 */
   
-  /* 去掉了 overflow: hidden，让图片完整显示 */
+  /* [可选] 给图片加一个非常淡的边框或阴影，
+     这能让白色背景的图片（如论文图表）边界更清晰，
+     视觉效果更像你的参考图。
+  */
+  border: 1px solid rgba(0,0,0,0.05); 
+  overflow: hidden; /* 保证圆角不被图片溢出遮挡 */
 
   img, video {
-    display: block;    /* 消除图片底部的微小空隙 */
-    width: 100%;       /* 宽度填满 200px */
-    height: auto;      /* [修改] 高度自动，保持原图比例 */
-    object-fit: contain; /* [修改] 确保图片完整显示，不裁剪 */
-    border-radius: 4px;
+    display: block;    /* 清除底部空隙 */
+    width: 100%;       /* 撑满 350px 的宽度 */
+    height: auto;      /* 维持原图比例 */
+    object-fit: contain; /* 保证图片完整显示，绝不裁剪 */
+  }
+
+  /* --- 响应式适配 --- */
+  @include breakpoint(max-width $medium) {
+    width: 280px; /* 平板上稍微缩小一点宽度 */
   }
 
   @include breakpoint(max-width $small) {
-    width: 100%;
-    height: auto;
+    width: 100%;       /* 手机端占满全宽 */
+    margin-right: 0;
+    margin-bottom: 1em; /* 图片在上面，增加下方间距 */
+    border: none; /* 手机上可以去掉边框显得更简洁 */
     
     img {
-      max-height: 250px; /* 手机端限制最大高度，防止图片太长 */
-      object-fit: cover; /* 手机上可以稍微裁剪一点以保证美观 */
+      max-height: auto; /* 手机上不再限制高度，让它自然展示 */
     }
   }
 }
+
 
 .publication-card__placeholder {
   width: 100%;
