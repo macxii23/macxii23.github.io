@@ -13,9 +13,6 @@ Southeast University, Nanjing, China
 - **GPA**: 3.92/4.0
 - **Rank**: 2/72 (Major), 4/276 (Overall in the School)
 - **Advisor**: Prof. Chengcheng Xu
-- **Main Courses**: 
-  - Traffic Engineering Theory (100)
-  - Data analysis and modeling (96)
 
 ---
 
@@ -27,9 +24,4 @@ Southeast University, Nanjing, China
 
 - **GPA**: 3.93/4.0
 - **Rank**: 2/96
-- **Main Courses**: 
-  - Linear Algebra (99)
-  - College Physics (99)
-  - Advanced Mathematics (98)
-  - Probability Theory and Mathematical Statistics (98)
-  - Programming and Algorithmic Language (97)
+- **Advisor**: Prof. Min Yang, Prof. Xu Qu
