@@ -144,10 +144,7 @@
   display: flex;
   flex-direction: column;
   
-  /* 确保最后一个元素（通常是按钮组）下面没有多余的 margin */
-  > *:last-child {
-    margin-bottom: 0 !important;
-  }
+
 }
 
 
