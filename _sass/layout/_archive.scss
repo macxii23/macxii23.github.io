@@ -73,70 +73,87 @@
 }
 
 /* Publication Card Layout */
-/* --- 1. 父容器布局调整 --- */
+/* --- 1. 父容器：开启等高模式 --- */
 .publication-card {
   display: flex;
-  /* gap: 1.5em;  <-- [删除] 我们改用 margin 来更精确控制间距 */
   margin-bottom: 2em;
-  padding: 1.2em; /* 稍微增加一点内边距让整体更舒展 */
+  padding: 1em; /* 这里的 padding 决定了图片离边框有多远 */
   border: 1px solid var(--global-border-color);
-  border-radius: 6px; /* 圆角稍微大一点点 */
+  border-radius: 4px;
   background-color: var(--global-bg-color);
   transition: all 0.3s ease;
-  align-items: flex-start; /* [保持顶部对齐] 这是最自然的对齐方式 */
+  
+  /* [关键点 1] 核心属性！让左右两栏强制等高 */
+  align-items: stretch; 
+  
+  gap: 1.5em; /* 图片和文字之间的固定间距 */
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 悬停浮起效果更明显一点 */
-    transform: translateY(-2px); /* 微微上浮 */
-  }
-
-  @include breakpoint(max-width $medium) { /* 在中等屏幕（平板）就开始调整 */
-     padding: 1em;
-  }
-
-  @include breakpoint(max-width $small) { /* 手机端变为垂直排列 */
-    flex-direction: column;
-  }
-}
-
-/* --- 2. 图片容器核心修改 --- */
-.publication-card__image {
-  flex-shrink: 0;
-  /* [核心修改] 宽度固定为 350px，让图片明显变大 */
-  width: 350px;        
-  height: auto;        /* 高度自适应，随宽度按比例变化 */
-  margin-right: 1.5em; /* [新增] 图片右侧与文字的间距 */
-  border-radius: 4px;
-  
-  /* [可选] 给图片加一个非常淡的边框或阴影，
-     这能让白色背景的图片（如论文图表）边界更清晰，
-     视觉效果更像你的参考图。
-  */
-  border: 1px solid rgba(0,0,0,0.05); 
-  overflow: hidden; /* 保证圆角不被图片溢出遮挡 */
-
-  img, video {
-    display: block;    /* 清除底部空隙 */
-    width: 100%;       /* 撑满 350px 的宽度 */
-    height: auto;      /* 维持原图比例 */
-    object-fit: contain; /* 保证图片完整显示，绝不裁剪 */
-  }
-
-  /* --- 响应式适配 --- */
-  @include breakpoint(max-width $medium) {
-    width: 280px; /* 平板上稍微缩小一点宽度 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
   }
 
   @include breakpoint(max-width $small) {
-    width: 100%;       /* 手机端占满全宽 */
-    margin-right: 0;
-    margin-bottom: 1em; /* 图片在上面，增加下方间距 */
-    border: none; /* 手机上可以去掉边框显得更简洁 */
+    flex-direction: column;
+    /* 手机端不需要等高，恢复自然高度 */
+    align-items: flex-start; 
+    gap: 1em;
+  }
+}
+
+/* --- 2. 图片容器：撑满高度 --- */
+.publication-card__image {
+  flex-shrink: 0;
+  width: 300px; /* [你可以调整] 这里设定你想要的图片宽度 */
+  
+  /* [关键点 2] 高度设为 auto 或 100%，但在 flex: stretch 下它会被拉伸 */
+  display: flex; 
+  flex-direction: column;
+  
+  margin: 0; /* 这里的间距由父容器的 gap 控制，所以设为 0 */
+  border-radius: 4px;
+  overflow: hidden; /* 保证圆角 */
+
+  /* 去掉边框，因为要完美对齐，通常不需要额外边框干扰 */
+  
+  img, video {
+    display: block;
+    width: 100%;
+    
+    /* [关键点 3] 强制图片高度填满容器 */
+    height: 100%; 
+    
+    /* [关键点 4] 核心裁剪模式：保证填满且不变形 */
+    object-fit: cover; 
+    
+    /* 如果你的图片重点在中间，用 center；如果在左边，用 left */
+    object-position: center; 
+  }
+
+  @include breakpoint(max-width $small) {
+    width: 100%;
+    height: 200px; /* 手机端给一个固定高度 */
     
     img {
-      max-height: auto; /* 手机上不再限制高度，让它自然展示 */
+      height: 100%;
     }
   }
+}
+
+/* --- 3. 右侧内容：确保撑开高度 --- */
+.publication-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* [可选] 这会让标题顶头，按钮底对齐，中间拉开 */
+  
+  /* 也就是：
+     Title (Top)
+     ...
+     Excerpt
+     ...
+     Buttons (Bottom)
+  */
 }
 
 
@@ -151,12 +168,7 @@
   font-size: 0.875em;
 }
 
-.publication-card__content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
+
 
 .publication-card__title {
   margin: 0;
