@@ -170,36 +170,38 @@
   margin-top: 0.5em;
 }
 
-/* 请完全替换之前的 .btn--publication 代码 */
 .btn--publication {
   display: inline-block;
   vertical-align: middle;
   
-  /* 核心样式：白底黑框黑字 */
-  background-color: #fff;       /* 强制白色背景 */
-  border: 1px solid #000;       /* 纯黑边框 */
-  color: #000 !important;       /* 强制纯黑文字 */
+  /* --- 核心修复：强制边框和颜色 --- */
+  background-color: #fff !important;    /* 强制白底 */
+  border: 1px solid #000 !important;    /* 强制1像素纯黑实线边框 (这里是关键) */
+  color: #000 !important;               /* 强制黑字 */
   
-  /* 字体与排版 */
-  font-size: 12px;              /* 字号稍小，显精致 */
-  font-weight: 600;             /* 字体加粗 */
-  text-transform: uppercase;    /* 强制英文大写 (如 Code -> CODE) */
-  text-decoration: none !important;
-  line-height: 1.2;
+  /* --- 字体与排版 (复刻 AgentThink 风格) --- */
+  font-family: sans-serif;              /* 确保是用非衬线字体 */
+  font-size: 12px;
+  font-weight: 700;                     /* 加粗 */
+  text-transform: uppercase;            /* 全大写 (PDF, CODE) */
+  text-decoration: none !important;     /* 去掉下划线 */
+  line-height: 1;                       /* 紧凑行高 */
   
-  /* 间距与形状 */
-  padding: 4px 10px;            /* 上下窄，左右宽 */
-  border-radius: 4px;           /* 圆角 */
-  margin-right: 8px;            /* 按钮之间的间距 */
-  margin-top: 5px;              /* 稍微与标题拉开距离 */
+  /* --- 形状与间距 --- */
+  padding: 6px 12px;                    /* 调整内边距让按钮看起来更像图里的样子 */
+  border-radius: 4px;                   /* 圆角 */
+  margin-right: 8px;
+  margin-top: 8px;                      /* 与上方内容的间距 */
   
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in-out;
 
-  /* 悬停效果：黑底白字 */
+  /* --- 悬停效果：黑底白字 --- */
   &:hover {
-    background-color: #000;     /* 背景变黑 */
-    color: #fff !important;     /* 文字变白 */
-    border-color: #000;
+    background-color: #000 !important;  /* 悬停变黑 */
+    color: #fff !important;             /* 文字变白 */
+    border-color: #000 !important;      /* 边框保持黑色 */
+    text-decoration: none !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 悬停时加一点点浮起的效果 */
   }
 }
 
