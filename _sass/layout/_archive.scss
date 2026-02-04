@@ -74,19 +74,20 @@
 
 /* Publication Card Layout */
 /* --- 1. 父容器：开启等高模式 --- */
+/* --- 父容器 --- */
 .publication-card {
   display: flex;
   margin-bottom: 2em;
-  padding: 1em; /* 这里的 padding 决定了图片离边框有多远 */
-  border: 1px solid var(--global-border-color);
-  border-radius: 4px;
+  padding: 1.2em;
+  border: 1px solid var(--global-border-color); /* 整个卡片的边框 */
+  border-radius: 6px;
   background-color: var(--global-bg-color);
   transition: all 0.3s ease;
   
-  /* [关键点 1] 核心属性！让左右两栏强制等高 */
-  align-items: stretch; 
+  /* 顶部对齐：这是最稳妥的排版，不要强制 stretch，否则短文会拉伸图片 */
+  align-items: flex-start; 
   
-  gap: 1.5em; /* 图片和文字之间的固定间距 */
+  gap: 1.5em;
 
   &:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -95,49 +96,58 @@
 
   @include breakpoint(max-width $small) {
     flex-direction: column;
-    /* 手机端不需要等高，恢复自然高度 */
-    align-items: flex-start; 
-    gap: 1em;
+    align-items: center; /* 手机端居中 */
   }
 }
 
-/* --- 2. 图片容器：撑满高度 --- */
+/* --- 图片容器：仿照参考图的“画框”模式 --- */
 .publication-card__image {
   flex-shrink: 0;
-  width: 300px; /* [你可以调整] 这里设定你想要的图片宽度 */
   
-  /* [关键点 2] 高度设为 auto 或 100%，但在 flex: stretch 下它会被拉伸 */
-  display: flex; 
-  flex-direction: column;
+  /* [关键 1] 固定宽度：保证左侧整齐 */
+  width: 320px;   
   
-  margin: 0; /* 这里的间距由父容器的 gap 控制，所以设为 0 */
+  /* [关键 2] 固定高度：设定一个标准的缩略图高度 */
+  height: 200px;  
+  
+  /* [关键 3] 稍微加一点边框或阴影，让白色图片也能看清边界 (学参考图) */
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: #fff; /* 强制白底 */
   border-radius: 4px;
-  overflow: hidden; /* 保证圆角 */
-
-  /* 去掉边框，因为要完美对齐，通常不需要额外边框干扰 */
+  padding: 5px; /* 图片离边框稍微留一点白，更好看 */
   
+  /* 让图片在框里垂直水平居中 */
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+
   img, video {
     display: block;
-    width: 100%;
     
-    /* [关键点 3] 强制图片高度填满容器 */
-    height: 100%; 
+    /* [关键 4] 限制最大宽高，但不强制拉伸 */
+    max-width: 100%;
+    max-height: 100%;
     
-    /* [关键点 4] 核心裁剪模式：保证填满且不变形 */
-    object-fit: cover; 
+    width: auto;
+    height: auto;
     
-    /* 如果你的图片重点在中间，用 center；如果在左边，用 left */
-    object-position: center; 
+    /* [关键 5] 完整显示核心 */
+    object-fit: contain; 
   }
 
   @include breakpoint(max-width $small) {
-    width: 100%;
-    height: 200px; /* 手机端给一个固定高度 */
-    
-    img {
-      height: 100%;
-    }
+    width: 100%; /* 手机端全宽 */
+    height: auto;
+    min-height: 200px;
   }
+}
+
+.publication-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* 如果你想让文字撑满高度，可以加这个，但在固定图片高度下不建议 */
+  /* min-height: 200px; */ 
 }
 
 /* --- 3. 右侧内容：确保撑开高度 --- */
