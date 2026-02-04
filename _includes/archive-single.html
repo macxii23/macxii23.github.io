@@ -44,13 +44,20 @@
         <div class="publication-card__content">
           <h3 class="publication-card__title">{{ post.title }}</h3>
           <p class="publication-card__authors">
+            {% comment %} --- 修改开始：定义你的名字变量 --- {% endcomment %}
+            {% assign my_name_full = "Chenxiang Ma" %}
+            {% assign my_name_short = "Ma, C." %}
+            
+            {% comment %} --- 逻辑：判断使用 authors 字段还是 citation 字段 --- {% endcomment %}
             {% if post.authors %}
-              {{ post.authors }}
+              {% assign author_text = post.authors %}
             {% elsif post.citation %}
               {% assign citation_parts = post.citation | split: '(' %}
-              {% assign authors_part = citation_parts[0] | strip | remove: '.' %}
-              {{ authors_part }}
+              {% assign author_text = citation_parts[0] | strip | remove: '.' %}
             {% endif %}
+
+            {% comment %} --- 输出：执行替换操作 (同时处理全名和缩写) --- {% endcomment %}
+            {{ author_text | replace: my_name_full, "<b>Chenxiang Ma</b>" | replace: my_name_short, "<b>Ma, C.</b>" }}
           </p>
           <p class="publication-card__venue">
             <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
