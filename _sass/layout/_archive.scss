@@ -79,16 +79,16 @@
   display: flex;
   margin-bottom: 2em;
   padding: 1.2em;
-  border: 1px solid var(--global-border-color); /* 整个卡片的边框 */
+  border: 1px solid var(--global-border-color);
   border-radius: 6px;
   background-color: var(--global-bg-color);
   transition: all 0.3s ease;
   
-  /* 顶部对齐：这是最稳妥的排版，不要强制 stretch，否则短文会拉伸图片 */
-  align-items: flex-start; 
-  
+  /* --- [核心修改] --- */
+  /* 改为 center，让图片和文字垂直居中对齐，解决下方空隙过大的问题 */
+  align-items: center; 
+  /* ---------------- */
   gap: 1.5em;
-
   &:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
@@ -103,20 +103,17 @@
 /* --- 图片容器：仿照参考图的“画框”模式 --- */
 .publication-card__image {
   flex-shrink: 0;
-  
-  /* [关键 1] 固定宽度：保证左侧整齐 */
   width: 320px;   
   
-  /* [关键 2] 固定高度：设定一个标准的缩略图高度 */
-  height: 200px;  
+  /* --- [核心修改] --- */
+  /* 从 200px 改为 160px，让盒子高度更贴合文字内容 */
+  height: 160px;  
+  /* ---------------- */
   
-  /* [关键 3] 稍微加一点边框或阴影，让白色图片也能看清边界 (学参考图) */
   border: 1px solid rgba(0,0,0,0.1);
-  background-color: #fff; /* 强制白底 */
+  background-color: #fff;
   border-radius: 4px;
-  padding: 5px; /* 图片离边框稍微留一点白，更好看 */
-  
-  /* 让图片在框里垂直水平居中 */
+  padding: 5px;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -146,25 +143,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* 如果你想让文字撑满高度，可以加这个，但在固定图片高度下不建议 */
-  /* min-height: 200px; */ 
+  
+  /* 确保最后一个元素（通常是按钮组）下面没有多余的 margin */
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
 }
 
-/* --- 3. 右侧内容：确保撑开高度 --- */
-.publication-card__content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* [可选] 这会让标题顶头，按钮底对齐，中间拉开 */
-  
-  /* 也就是：
-     Title (Top)
-     ...
-     Excerpt
-     ...
-     Buttons (Bottom)
-  */
-}
+
 
 
 .publication-card__placeholder {
