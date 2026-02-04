@@ -27,12 +27,53 @@
     {% endif %}
 
     {% if post.collection == 'publications' %}
-      <p class="archive__item-excerpt" itemprop="description">
-        {{ post.citation }}
-        {% if post.paperurl %}
-          <a href="{{ post.paperurl }}">[Link]</a>
-        {% endif %}
-      </p>
+      <div class="publication-card">
+        <div class="publication-card__image">
+          {% if post.header.teaser %}
+            {% if post.header.teaser contains ".mp4" or post.header.teaser contains ".webm" or post.header.teaser contains ".mov" %}
+              <video muted loop>
+                <source src="{% if post.header.teaser contains '://' %}{{ post.header.teaser }}{% else %}{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" type="video/mp4">
+              </video>
+            {% else %}
+              <img src="{% if post.header.teaser contains '://' %}{{ post.header.teaser }}{% else %}{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="{{ post.title }}">
+            {% endif %}
+          {% else %}
+            <div class="publication-card__placeholder"></div>
+          {% endif %}
+        </div>
+        <div class="publication-card__content">
+          <h3 class="publication-card__title">{{ post.title }}</h3>
+          <p class="publication-card__authors">
+            {% if post.authors %}
+              {{ post.authors }}
+            {% elsif post.citation %}
+              {% assign citation_parts = post.citation | split: '(' %}
+              {% assign authors_part = citation_parts[0] | strip | remove: '.' %}
+              {{ authors_part }}
+            {% endif %}
+          </p>
+          <p class="publication-card__venue">
+            <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
+          </p>
+          <div class="publication-card__buttons">
+            {% if post.paperurl %}
+              <a href="{{ post.paperurl }}" class="btn btn--publication" target="_blank">PDF</a>
+            {% endif %}
+            {% if post.codeurl %}
+              <a href="{{ post.codeurl }}" class="btn btn--publication" target="_blank">CODE</a>
+            {% endif %}
+            {% if post.websiteurl %}
+              <a href="{{ post.websiteurl }}" class="btn btn--publication" target="_blank">WEBSITE</a>
+            {% endif %}
+            {% if post.slidesurl %}
+              <a href="{{ post.slidesurl }}" class="btn btn--publication" target="_blank">SLIDES</a>
+            {% endif %}
+            {% if post.bibtexurl %}
+              <a href="{{ post.bibtexurl }}" class="btn btn--publication" target="_blank">BIBTEX</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
     {% else %}
       <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
