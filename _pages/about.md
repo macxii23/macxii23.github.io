@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a final-year Master's student at [Southeast University](https://www.seu.edu.cn/), Nanjing, China, working under the supervision of [Prof. Chengcheng Xu]([‪Chengcheng Xu‬ - ‪Google Scholar‬](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en)). I earned my Bachelor degree in Traffic Engineering (Mao Yisheng Class) from Southeast University in 2023.
+I am currently a final-year Master's student at [Southeast University](https://www.seu.edu.cn/), Nanjing, China, working under the supervision of [Prof. Chengcheng Xu](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en). I earned my Bachelor degree in Traffic Engineering (Mao Yisheng Class) from Southeast University in 2023.
 
 My research concentrates on **Generative and Embodied Artificial Intelligence for Intelligent Transportation Systems**. Standing at the inflection point where AI is reshaping transportation research, I aim to explore how emerging technologies can transcend the boundaries of traditional modeling, optimization, and decision-making paradigms. My ultimate goal is to construct more intelligent and trustworthy autonomous transportation systems.
 
