@@ -4,9 +4,8 @@ title: "Education"
 author_profile: true
 ---
 
-## Master's Degree
+## M.S., Traffic and Transportation Engineering
 
-**M.S., Traffic and Transportation Engineering**  
 Southeast University, Nanjing, China  
 *Sep 2023 - Jun 2026 (expected)*
 
@@ -16,9 +15,8 @@ Southeast University, Nanjing, China
 
 ---
 
-## Bachelor's Degree
+## B.S., Traffic Engineering (Mao Yisheng Class)
 
-**B.S., Traffic Engineering (Mao Yisheng Class)**  
 Southeast University, Nanjing, China  
 *Sep 2019 - Jun 2023*
 
