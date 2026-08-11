@@ -9,7 +9,7 @@ author_profile: true
 McGill University, Montreal, Canada<br>
 *Starting Aug 2026*
 
-- **Advisor**: [Prof. Lijun Sun](https://scholar.google.com/citations?user=qi4IEtkAAAAJ&hl=en)
+- **Advisor**: Prof. Lijun Sun
 
 ---
 
