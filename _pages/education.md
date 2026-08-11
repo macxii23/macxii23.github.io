@@ -4,10 +4,19 @@ title: "Education"
 author_profile: true
 ---
 
+## Ph.D., Civil Engineering (Upcoming)
+
+McGill University, Montreal, Canada<br>
+*Starting Aug 2026*
+
+- **Advisor**: Prof. Lijun Sun
+
+---
+
 ## M.S., Traffic and Transportation Engineering
 
 Southeast University, Nanjing, China  
-*Sep 2023 - Jun 2026 (expected)*
+*Sep 2023 - Jun 2026*
 
 - **GPA**: 3.92/4.0
 - **Rank**: 2/72 (Major), 4/276 (Overall in the School)
