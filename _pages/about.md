@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a final-year Master's student at [Southeast University](https://www.seu.edu.cn/), Nanjing, China, working under the supervision of [Prof. Chengcheng Xu](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en). I earned my Bachelor degree in Traffic Engineering (Mao Yisheng Class) from Southeast University in 2023.
+I am currently an upcoming Ph.D. student in Civil Engineering at [McGill University](https://www.mcgill.ca/), where I will be advised by Prof. Lijun Sun. I received my Master's degree in Traffic and Transportation Engineering from [Southeast University](https://www.seu.edu.cn/), Nanjing, China, in 2026 under the supervision of [Prof. Chengcheng Xu](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en), and my Bachelor's degree in Traffic Engineering (Mao Yisheng Class) from Southeast University in 2023.
 
 My research concentrates on **Generative and Embodied Artificial Intelligence for Intelligent Transportation Systems**. Standing at the inflection point where AI is reshaping transportation research, I aim to explore how emerging technologies can transcend the boundaries of traditional modeling, optimization, and decision-making paradigms. My ultimate goal is to construct more intelligent and trustworthy autonomous transportation systems.
 
@@ -31,8 +31,11 @@ Specifically, my work focuses on the following key areas:
 
 <div style="max-height: 500px; overflow-y: auto; padding: 10px; border: 1px solid #eee; border-radius: 5px;">
 <ul>
+  <li>🍁 [Aug. 2026] I will join McGill University as a Ph.D. student in Civil Engineering under the supervision of Prof. Lijun Sun.  </li>
+  <li>🎓 [Jun. 2026] I received my Master's degree in Traffic and Transportation Engineering from Southeast University.  </li>
+  <li>🤖 [Jun. 2026] Presented our work on full-scale autonomous highway inspection with a quadruped robot at IEEE ICRA 2026 in Vienna.  </li>
   <li>🎉 [Jan. 2026] Excited to share that our work on quadruped robot for highway inspection has been accepted to IEEE ICRA 2026! See you in Vienna!  </li>
-  <li>🍻 [Jan. 2026] Had a great time engaging with the transportation community at the 105th TRB Annual Meeting.  </li>
+  <li>🍻 [Jan. 2026] Had a great time engaging with the transportation community at the 105th TRB Annual Meeting in Washington, D.C.  </li>
 </ul>
 </div>
 
