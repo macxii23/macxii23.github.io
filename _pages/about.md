@@ -31,7 +31,7 @@ Specifically, my work focuses on the following key areas:
 
 <div style="max-height: 500px; overflow-y: auto; padding: 10px; border: 1px solid #eee; border-radius: 5px;">
 <ul>
-  <li>🍁 [Aug. 2026] I will join McGill University as a Ph.D. student in Civil Engineering under the supervision of <a href="https://scholar.google.com/citations?user=qi4IEtkAAAAJ&amp;hl=en">Prof. Lijun Sun</a>.  </li>
+  <li>🍁 [Aug. 2026] I will join McGill University as a Ph.D. student in Civil Engineering under the supervision of Prof. Lijun Sun</a>.  </li>
   <li>🎓 [Jun. 2026] I received my Master's degree in Traffic and Transportation Engineering from Southeast University.  </li>
   <li>🤖 [Jun. 2026] Presented our work on full-scale autonomous highway inspection with a quadruped robot at IEEE ICRA 2026 in Vienna.  </li>
   <li>🎉 [Jan. 2026] Excited to share that our work on quadruped robot for highway inspection has been accepted to IEEE ICRA 2026! See you in Vienna!  </li>
