@@ -14,7 +14,7 @@ author_profile: true
 
 ## Scholarships
 
-- **Canada Impact+ Research Training Awards (CIRTA)**, 2026
+- **Canada Impact+ Research Training Award (CIRTA)**, 2026
 - **China National Scholarship**, Ministry of Education, China, 2025 (top 3%)
 - **China National Scholarship**, Ministry of Education, China, 2024 (top 3%)
 
