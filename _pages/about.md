@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently an upcoming Ph.D. student in Civil Engineering at [McGill University](https://www.mcgill.ca/), where I will be advised by Prof. [Lijun Sun](https://scholar.google.com/citations?user=qi4IEtkAAAAJ&hl=en). I received my Master's degree in Traffic and Transportation Engineering from [Southeast University](https://www.seu.edu.cn/), Nanjing, China, in 2026 under the supervision of [Prof. Chengcheng Xu](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en), and my Bachelor's degree in Traffic Engineering (Mao Yisheng Class) from Southeast University in 2023.
+I am currently an upcoming Ph.D. student in Civil Engineering at [McGill University](https://www.mcgill.ca/), where I will be advised by Prof. [Lijun Sun](https://scholar.google.com/citations?user=qi4IEtkAAAAJ&hl=en). I received my Master's degree in Traffic and Transportation Engineering from [Southeast University](https://www.seu.edu.cn/), Nanjing, China, in 2026 under the supervision of Prof. [Chengcheng Xu](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en), and my Bachelor's degree in Traffic Engineering (Mao Yisheng Class) from Southeast University in 2023.
 
 My research concentrates on **Generative and Embodied Artificial Intelligence for Intelligent Transportation Systems**. Standing at the inflection point where AI is reshaping transportation research, I aim to explore how emerging technologies can transcend the boundaries of traditional modeling, optimization, and decision-making paradigms. My ultimate goal is to construct more intelligent and trustworthy autonomous transportation systems.
 
