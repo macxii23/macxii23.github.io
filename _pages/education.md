@@ -9,7 +9,7 @@ author_profile: true
 McGill University, Montreal, Canada<br>
 *Starting Aug 2026*
 
-- **Advisor**: Prof. Lijun Sun
+- **Advisor**: Prof. [Lijun Sun](https://scholar.google.com/citations?user=qi4IEtkAAAAJ&hl=en)
 
 ---
 
@@ -20,8 +20,7 @@ Southeast University, Nanjing, China
 
 - **GPA**: 3.92/4.0
 - **Rank**: 2/72 (Major), 4/276 (Overall in the School)
-- **Advisor**: Prof. Chengcheng Xu
-
+- **Advisor**: Prof. [Chengcheng Xu](https://scholar.google.com/citations?user=LzmJ1nkAAAAJ&hl=en)
 ---
 
 ## B.S., Traffic Engineering (Mao Yisheng Class)
